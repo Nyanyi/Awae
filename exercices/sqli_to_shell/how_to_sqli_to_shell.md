@@ -76,7 +76,7 @@ Resultados:
 - Tiene un parámetro de entrada, id
 - No hay una función de filtrado
 
-#### Resumen
+#### Resumen
 
 Se seguirá el análisis de las funciones all y show, quedando descartada la función render por que incorporar una regla de filtrado
 
@@ -221,7 +221,7 @@ Se seguirá el análisis de las funciones all y show, quedando descartada la fun
 
 ![params_login](https://github.com/Nyanyi/Awae/blob/main/exercices/sqli_to_shell/images/params_login.png)
 
-​		6. Y partir de aquí, mediante greps:
+   6. Y partir de aquí, mediante greps:
 
 ![params_login_grep](https://github.com/Nyanyi/Awae/blob/main/exercices/sqli_to_shell/images/params_login_grep.png)
 
@@ -246,7 +246,7 @@ Se seguirá el análisis de las funciones all y show, quedando descartada la fun
 
 3. Mediante burp se revisan que parámetros son necesarios para llevar a cabo la subida del fichero:
 
-![burp_new](https://github.com/Nyanyi/Awae/blob/main/exercices/sqli_to_shell/images/pruebas/burp_new.png)
+![burp_new](https://github.com/Nyanyi/Awae/blob/main/exercices/sqli_to_shell/images/burp_new.png)
 
 4. El analisis de la función create( en classes/picture) aporta la siguiente información:
 
