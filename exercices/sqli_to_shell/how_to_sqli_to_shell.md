@@ -217,12 +217,11 @@ Se seguirá el análisis de las funciones all y show, quedando descartada la fun
 
          ​	![md5login](https://github.com/Nyanyi/Awae/blob/main/exercices/sqli_to_shell/images/md5login.png)
 
-   5. Otra opción hubiera sido probar un login en la aplicación:
+   5. Otra opción hubiera sido probar un login en la aplicación y luego revisar el código:
 
 ![params_login](https://github.com/Nyanyi/Awae/blob/main/exercices/sqli_to_shell/images/params_login.png)
 
-   6. Y partir de aquí, mediante greps:
-
+ 
 ![params_login_grep](https://github.com/Nyanyi/Awae/blob/main/exercices/sqli_to_shell/images/params_login_grep.png)
 
 4. John 
