@@ -13,7 +13,7 @@
 
    
 
-![Screenshot at Oct 12 23-34-43](/Users/nyanyi/Datos/Material_estudio/Offensive_secu/Awae/Preparacion/maquinas_preparacion/sqli_to_shell/pruebas/Screenshot at Oct 12 23-34-43.png)
+![Screenshot at Oct 12 23-34-43](https://github.com/Nyanyi/Awae/blob/main/exercices/sqli_to_shell/images/Screenshot%20at%20Oct%2012%2023-34-43.png)
 
 Resultados: 
 -	Lenguaje: PHP/5.3.3-7
