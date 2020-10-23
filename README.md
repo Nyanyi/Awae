@@ -7,15 +7,17 @@
 
 3. https://www.pentesterlab.com/exercises/from_sqli_to_shell/course
 
-4. https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/SQL%20Injection
+4.  https://pentesterlab.com/exercises/from_sqli_to_shell_II/course
 
-5. http://pentestmonkey.net/category/cheat-sheet/sql-injection
+5. https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/SQL%20Injection
 
-6. https://sqlwiki.netspi.com/
+6. http://pentestmonkey.net/category/cheat-sheet/sql-injection
 
-7. https://medium.com/bugbountywriteup/sql-injection-to-lfi-to-rce-536bed29a862
+7. https://sqlwiki.netspi.com/
 
-8.  https://owasp.org/www-community/attacks/Blind_SQL_Injection
+8. https://medium.com/bugbountywriteup/sql-injection-to-lfi-to-rce-536bed29a862
+
+9.  https://owasp.org/www-community/attacks/Blind_SQL_Injection
 
 ## XSS
 
