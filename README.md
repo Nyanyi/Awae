@@ -16,3 +16,7 @@
 7. https://medium.com/bugbountywriteup/sql-injection-to-lfi-to-rce-536bed29a862
 
 8.  https://owasp.org/www-community/attacks/Blind_SQL_Injection
+
+## XSS
+
+1.  XSS + SQL + RCE: https://sarthaksaini.com/2019/awae/xss-rce.html 
