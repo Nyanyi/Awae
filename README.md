@@ -16,6 +16,7 @@
 ### Discovery SQLi
 
 1.  If a ' is causing the error try to see if \' will result in success message (since the backslash cancels out the single quote in MySQL).
+- sas
 
 2.  You can also try if commenting out the ' results in a success message like: %23' or --'. This is because you tell MySQL to explicitly ignore everything after the comment include the extra '.
 
