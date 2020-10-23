@@ -12,3 +12,5 @@
 5. http://pentestmonkey.net/category/cheat-sheet/sql-injection
 
 6. https://sqlwiki.netspi.com/
+
+7. https://medium.com/bugbountywriteup/sql-injection-to-lfi-to-rce-536bed29a862
