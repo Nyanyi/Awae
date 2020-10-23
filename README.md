@@ -11,6 +11,8 @@
 
 5. http://pentestmonkey.net/category/cheat-sheet/sql-injection
 
+6. https://sqlwiki.netspi.com/
+
 ### Discovery SQLi
 
 1.  If a ' is causing the error try to see if \' will result in success message (since the backslash cancels out the single quote in MySQL).
