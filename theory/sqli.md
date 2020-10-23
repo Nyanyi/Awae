@@ -20,3 +20,6 @@
 
 6.  Try to see if an even amount of quotes results in a success message (for example 460'' or 460-'') and an uneven amount results in an error (for example 460' or 460-''').
 
+7. Blind - Content Base: In the case of a Content-based Blind SQL Injection attack, the attacker makes different SQL queries that ask the database TRUE or FALSE questions. Then they analyze differences in responses between TRUE and FALSE statements.
+
+8.  Blind - Time Base: In the case of time-based attacks, the attacker makes the database perform a time-intensive operation. If the web site does not return a response immediately, the web application is vulnerable to Blind SQL Injection. A popular time-intensive operation is the sleep operation.
