@@ -124,7 +124,7 @@ Se seguirá el análisis de las funciones all y show, quedando descartada la fun
 
 1. Identificación del gestor de la Database
 
-   - En el erro SQL obtenido anteriormente se informa que es Msyql
+   - En el error SQL obtenido anteriormente se informa que es Msyql
 
 2. Número de columnas
 
