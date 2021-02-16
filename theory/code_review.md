@@ -61,7 +61,7 @@ surface, identify the diferent threat agents and their motivations, and how they
 
 #### Descomposición de la aplicacion
 
-El primer paso en el proceso de modelado de amenazas tiene que ver con comprender la aplicación y cómo interactúa con agentes externas. Esto implica crear casos de uso para comprender cómo se usa la aplicación, identificar puntos de entrada para ver dónde un atacante potencial podría interactuar con la aplicación, identificar a áreas en los que el atacante estaría interesado (funcionalidades) e identificar los niveles de confianza que representan los derechos de acceso que la aplicación otorgará a entidades externas.
+El primer paso en el proceso de modelado de amenazas tiene que ver con comprender la aplicación y cómo interactúa con agentes externos. Esto implica crear casos de uso para comprender cómo se usa la aplicación, identificar puntos de entrada para ver dónde un atacante potencial podría interactuar con la aplicación, identificar a áreas en los que el atacante estaría interesado (funcionalidades) e identificar los niveles de confianza que representan los derechos de acceso que la aplicación otorgará a entidades externas.
 
 En resumen, obtener esta información:
 
