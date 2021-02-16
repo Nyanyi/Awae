@@ -8,7 +8,7 @@
 4. Definir el propósito y contexto de la aplicación
 5. Debilidad vs Vulnerabilidad
 6. Palabras clave: 
-   1. Source: Código que permite que haya una vulnerabilida
+   1. Source: Código que permite que haya una vulnerabilidad. Basicamente, es el "Origen del dato".
    2. Sink: Donde sucede la vulnerabilidad
 
 ```
