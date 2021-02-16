@@ -73,7 +73,7 @@ En resumen, obtener esta información:
 - Data flow
 - Transacciones
 
-##### Determinar posibles las amenazas
+##### Determinar las posibles amenazas
 
 - Spoofing
 - Tampering
