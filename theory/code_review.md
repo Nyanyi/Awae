@@ -35,10 +35,12 @@ Es importante acordarse que la revisión de código no es solo sobre la estructu
 
 1. Definición general de los principales riesgos. 
 2. Determinar la facilidad de exposición: ¿esta expuesta a Internet?
-3. Definir el  propósito de la aplicación y sus prioridades. Eso nos ayudara a determinar que funciones, código, es mas critico
+3. Definir el  propósito de la aplicación y sus prioridades. Eso nos ayudara a determinar que funciones, código, es más critico.
 4. Conocer la estructura del código
 5. Obtener detalles sobre el Lenguaje de programación, framework, etc
-6. Documentación
+6. Conocer que funciones requieren autorización y cuáles no
+7. Conocer que funciones son accesibles por el usuario
+8. Documentación
 
 ```
 The design and the
@@ -67,7 +69,7 @@ En resumen, obtener esta información:
 
 - External depencias
 - Entry points
-- Funcionalidades interesantes
+- Funcionalidades interesantes (cuáles requieren autorización, cuales no, cuales son accesibles por el usuario)
 - Determinar la superficie de ataque
 - Autorizaciones
 - Data flow
@@ -109,11 +111,12 @@ Documentar todo lo que hayas obtenido
 ### Fase 4 - Primeras acciones a realizar
 
 1. Búsqueda de strings, keywoards, code patterns (api keys, encryptions keys, database passwords) buscando key, secret, passwords en hex o base64
-2. Búsqueda de firmas de vulnerabilidades (cómo consultas SELECT)
-3. Funciones "peligrosas"
+2. Funciones "peligrosas"
+   - Que requieran o no autorización  
    - Sobretodo las que tengan entrada del usuario
    - system, eval(), input(), etc
    - Mirar las especificas de cada lenguaje
+3. Búsqueda de firmas de vulnerabilidades (cómo consultas SELECT)
 4. Comentarios del desarrollador
 5. Ficheros de configuración
 6. Endpoints abandonados o en desarrollo
@@ -130,6 +133,9 @@ Documentar todo lo que hayas obtenido
    - database entries
    - file uploads
 2. Funciones:
+   - Funciones que no requieran autorización
+   - Funciones accesibles por el usuario
+   - Funciones que requieran autorización  
    - Funciones de autorizacion
    - Funciones de autenticacion
    - Logicas
@@ -145,7 +151,7 @@ It is said that a review goes best when conducted on less than 400 lines of code
 ### Ideas basicas
 
 1. Analizar los user input
-2. Analizar las funciones, como se relacionan entre si
+2. Analizar las funciones, como se relacionan entre si, cuáles estan en parte autenticada, cuáles no
 3. Escribir el esqueleto de las funciones, los input etc
 4. Comprobar como llegan las variables y que protecciones se realizan a las funciones
 5. Debilidades vs vulnerabilidades
