@@ -22,3 +22,5 @@
 ## XSS
 
 1.  XSS + SQL + RCE: https://sarthaksaini.com/2019/awae/xss-rce.html 
+
+(change)
